@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Shape of the Board</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="project.css" rel="stylesheet">
+<style>
+form { background-color: #93A8AC;
+ font-family: Arial, sans-serif;
+ width: 350px; padding: 10px; }
+ 
+label { float: left; clear: left; display: block;
+ width: 100px; padding-right: 10px;
+ margin-top: 10px; text-align: right; }
+
+input { display: block; margin-top: 10px; }
+
+textarea { display: block; margin-top: 10px; }
+
+input[type="submit"] { margin-left: 110px; } input[type="Reset"] { margin-left: 110px; }
+
+#details { display: none; }
+</style>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.m
+in.js">
+</script>
+<script>
+$(document).ready(function() {
+ $('#more').click(function(){
+ $('#details').toggle();
+ });
+});
+</script>
+</head>
+<body>
+<div id="wrapper">  
+  <nav>
+    <ul>
+	 <li><a href="index.html">Home</a></li>
+	 <li><a href="skate.html">Skateboard</a></li>
+     <li><a href="long.html">Longboard</a></li>
+     <li><a href="community.html">Community</a></li>
+	 <li><a href="proleague.html">Events</a></li>
+     <li><a href="contact.html">Contact</a></li>
+	</ul> 
+   </nav>
+   <header>
+    <h1>Contact Us</h1>
+    <span></span>
+   </header>
+   <main>
+   <h2>Contact Shape of the Board</h2>
+   <p>Do you have a question? A suggestion? Our team would love to hear from you. 
+   Our goal is to help you become more knowlegable on the sport and help you stay up to date on the latest on the scene.</p>
+	<h3>Send Us Your Videos!</h3>
+	<p>E-mail: <a href="mailto:contact@shapeoftheboard.com">contact@shapeoftheboard.com</a></p>
+	<h1>Sign Up to our Weekly Newsletter!<a href="#"id="more">More</a></h1>
+	<div id="details">
+		<form method="get">
+		<label for="myName">Fullname:</label>
+		<input type="text" name="myName" id="myName">
+		<label for="myEmail">E-mail:</label>
+		<input type="text" name="myEmail" id="myEmail">
+		<label for="myComments">Comments:</label>
+		<textarea name="myComments" id="myComments" rows="2" cols="20"></textarea>
+		<input id="mySubmit" type="submit" value="Submit"> <input type="Reset">
+		</form>
+	</div>
+	</main>
+   <footer>Copyright &copy; 2020
+   </footer>
+   </div>
+</body>
+</html>
